@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/03/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>manjaro配置方法</title>
     <url>/2024/03/03/manjaro%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>制作linux启动盘<br><a href="https://manjaro.org/download/">https://manjaro.org/download/</a><br><a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a><br>下载安装</p>
-<p>升级&#x2F;安装软件而不升级系统<br>升级系统很容易会出现驱动问题，使用以下命令，可以安装&#x2F;升级软件而不升级系统：<br>sudo pacman -Sy package</p>
-<p>内核和驱动的相关问题（非常重要）：<br>sudo pacman -S nvidia<br>mhwd-kernel -l</p>
+<p>升级&#x2F;安装软件而不升级系统<br>升级系统很容易会出现驱动问题，使用以下命令，可以安装&#x2F;升级软件而不升级系统：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sy package</span><br></pre></td></tr></table></figure>
+
+
+<p>内核和驱动的相关问题（非常重要）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia</span><br><span class="line">mhwd-kernel -l</span><br></pre></td></tr></table></figure>
+
 <p>把以上两条命令列出来的内核和驱动复制到文本，然后再使用“系统设置”——“硬件设定”检测出可以安装的驱动，然后在文本中筛选出最新版本的内核以及和内核绑定的驱动：</p>
-<p>sudo mhwd-kernel -i linuxXXX rmc</p>
-<p>其中，linuxXXX 是指列出的最新版本的内核，而 rmc 是删除旧内核。然后：<br>reboot</p>
-<p>重开机后，终端输入：<br>sudo pacman -S nvidia linuxXXX-nvidia-XXX</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mhwd-kernel -i linuxXXX rmc</span><br></pre></td></tr></table></figure>
+
+<p>其中，linuxXXX 是指列出的最新版本的内核，而 rmc 是删除旧内核。然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+
+<p>重开机后，终端输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia linuxXXX-nvidia-XXX</span><br></pre></td></tr></table></figure>
+
 <p>其中：linuxXXX-nvidia-XXX 是指最新版的驱动</p>
 <p>以下是参考文章：<br>■Manjaro配置显卡驱动程序■<br>■manjaro安装nvidia驱动■<br>■Manjaro的Linux内核管理■</p>
 <p>系统设置<br>【添加删除软件】的软件源设置：<br>添加&#x2F;删除软件——首选项——常规——检查更新：不勾选；<br>     ——使用镜像从：选择“China”，并点击“刷新镜像列表”；</p>
@@ -40,24 +32,46 @@
 <p>添加&#x2F;删除软件——刷新数据库；</p>
 <p>【系统设置】：<br>外观——全局主题——选择“Breath2 2021”；<br>——Plasma样式——选择“Breeze微风深色”；<br>——窗口装饰元素——主题——选择“Breeze微风”；<br>——标题栏按钮——移除“？”；<br>——颜色——选择“Breeze微风”；<br>——字体——调整所有字体——选择“文泉驿微米黑”；<br>——图标——获取新图标主题——搜索“fluent”安装使用；下载附件解压，下载以下附件：</p>
 <p>解压后，分别替换 ~&#x2F;.local&#x2F;share&#x2F;icons&#x2F;Fluent 当中的 &#x2F;16&#x2F;places&#x2F; 、&#x2F;22&#x2F;places&#x2F; 和 &#x2F;24&#x2F;places&#x2F; 文件夹。</p>
-<p>更换panel输入法图标：<br>mv ~&#x2F;.local&#x2F;share&#x2F;icons&#x2F;Fluent&#x2F;symbolic&#x2F;devices&#x2F;input-keyboard-symbolic.svg ~&#x2F;.local&#x2F;share&#x2F;icons&#x2F;Fluent&#x2F;symbolic&#x2F;devices&#x2F;input-keyboard-symbolic.svg.bak</p>
-<p>cp &#x2F;usr&#x2F;share&#x2F;icons&#x2F;breeze&#x2F;devices&#x2F;22&#x2F;input-keyboard.svg ~&#x2F;.local&#x2F;share&#x2F;icons&#x2F;Fluent&#x2F;symbolic&#x2F;devices&#x2F;input-keyboard-symbolic.svg</p>
-<p>下载附件后：<br>mv 5120x2880.png.zip 5120x2880.png &amp;&amp; sudo cp 5120x2880.png &#x2F;usr&#x2F;share&#x2F;sddm&#x2F;themes&#x2F;breeze &amp;&amp; sudo mv 5120x2880.png &#x2F;usr&#x2F;share&#x2F;wallpapers&#x2F;Bamboo&#x2F;contents&#x2F;images</p>
+<p>更换panel输入法图标：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> ~/.local/share/icons/Fluent/symbolic/devices/input-keyboard-symbolic.svg ~/.local/share/icons/Fluent/symbolic/devices/input-keyboard-symbolic.svg.bak</span><br><span class="line">  </span><br><span class="line"><span class="built_in">cp</span> /usr/share/icons/breeze/devices/22/input-keyboard.svg ~/.local/share/icons/Fluent/symbolic/devices/input-keyboard-symbolic.svg</span><br></pre></td></tr></table></figure>
+
+
+<p>下载附件后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> 5120x2880.png.zip 5120x2880.png &amp;&amp; sudo <span class="built_in">cp</span> 5120x2880.png /usr/share/sddm/themes/breeze &amp;&amp; sudo <span class="built_in">mv</span> 5120x2880.png /usr/share/wallpapers/Bamboo/contents/images</span><br></pre></td></tr></table></figure>
+
 <p>工作区——工作区行为——屏幕边缘：取消所有边缘操作；<br>——桌面特效——外观增强——勾选“最小化过渡动画（神灯）；<br>              ——勾选“窗口透明度”；<br>——窗口管理功能——桌面总览图——显示隐藏桌面总览：Ctrl+Meta+D；<br>——虚拟桌面：删除第二个虚拟桌面；<br>——锁屏——自动锁定屏幕：不勾选；<br>——添加图像：选择“Bamboo”；<br>    ——窗口管理——任务切换器——主窗口——微风：改为“大图标”；<br>    ——快捷键——KRunner：改为“Meta + F”；<br>    ——开机与关机——登录屏幕——选择“微风”；<br>——自动启动：删除多余启动项；<br>——桌面会话——登入时：选择“以空会话启动”；<br>    ——搜索——文件搜索：勾选“索引隐藏文件和文件夹”；<br>    ——KRunner——屏幕上的位置：选择“居中”；</p>
 <p>硬件——输入设备——键盘——硬件——Plasma启动时NumLock状态：“开启”；<br>——显卡与显示器——夜间颜色——激活夜间颜色：勾选；<br>——音频——回放流——通知声音——点击静音。</p>
 <p>【任务管理器排列顺序】：<br>开始按钮、便利贴、Dolphin、okular、konsole、微信、blender、gimp、inkscape、wps、scribus、kate、kdenlive、davinci、vscode、edge……</p>
 <p> 【字体下载与设置】：<br>安装的字体太多，在使用 Davinci Resolve 这类型软件的时候，可能会显示宋体。如果遇到这种情况，可以进行以下操作：</p>
-<p>首先，备份一下：<br>cp ~&#x2F;.config&#x2F;fontconfig&#x2F;fonts.conf ~&#x2F;.config&#x2F;fontconfig&#x2F;fonts.conf.bak</p>
+<p>首先，备份一下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> ~/.config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf.bak</span><br></pre></td></tr></table></figure>
+
 <p>下载附件，放到主文夹：<br><a href="https://pan.baidu.com/s/155DNfpT2pir-K38jOqa_FA">https://pan.baidu.com/s/155DNfpT2pir-K38jOqa_FA</a><br> 提取码: rg4y</p>
-<p>然后：<br>mv ~&#x2F;fonts.conf ~&#x2F;.config&#x2F;fontconfig&#x2F;</p>
+<p>然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> ~/fonts.conf ~/.config/fontconfig/</span><br></pre></td></tr></table></figure>
+
+
+
 <p>【隐藏文件】：<br>在主文件夹新建一个 .hidden 文本文件，然后把需要隐藏的文件夹名字写在文本文件里，每一行隐藏一个文件。</p>
 <p>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
 <p>相关软件的安装与设置</p>
-<p>【删除无用预装软件】：<br>sudo pacman -R k3b kcalc kget konversation kwalletmanager qbittorent khelpercenter steam elisa htop yakuake timeshift timeshift-autosnap-manjaro matray manjaro-hello ksystemlog manjaro-documentation-en ksysguard onlyoffice-desktopeditors</p>
-<p>删除无用的软件：<br>sudo pacman -R $(pacman -Qdtq) </p>
-<p>清除软件缓存：<br>sudo pacman -Scc</p>
-<p>【安装常用软件】：<br>sudo pacman -S blender inkscape gimp scribus kdenlive libreoffice-still libreoffice-still-zh-cn lmms krita lmms audacity freecad vlc v2ray obs-studio yay gthumb opencl-nvidia </p>
-<p>【fcitx5的安装与设置】：<br>sudo pacman -S fcitx5 fcitx5-configtool fcitx5-chinese-addons fcitx5-gtk fcitx5-qt fcitx5-rime rime-wubi wqy-microhei</p>
+<p>【删除无用预装软件】：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -R k3b kcalc kget konversation kwalletmanager qbittorent khelpercenter steam elisa htop yakuake timeshift timeshift-autosnap-manjaro matray manjaro-hello ksystemlog manjaro-documentation-en ksysguard onlyoffice-desktopeditors</span><br></pre></td></tr></table></figure>
+
+<p>删除无用的软件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -R $(pacman -Qdtq) </span><br></pre></td></tr></table></figure>
+
+<p>清除软件缓存：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Scc</span><br></pre></td></tr></table></figure>
+
+
+<p>【安装常用软件】：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S blender inkscape gimp scribus kdenlive libreoffice-still libreoffice-still-zh-cn lmms krita lmms audacity freecad vlc v2ray obs-studio yay gthumb opencl-nvidia </span><br></pre></td></tr></table></figure>
+
+
+<p>【fcitx5的安装与设置】：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-configtool fcitx5-chinese-addons fcitx5-gtk fcitx5-qt fcitx5-rime rime-wubi wqy-microhei</span><br></pre></td></tr></table></figure>
+
 <p>kate ~&#x2F;.xprofile<br>把以下内容粘贴进去：<br>export GTK_IM_MODULE&#x3D;fcitx5<br>export QT_IM_MODULE&#x3D;fcitx5<br>export XMODIFIERS&#x3D;”@im&#x3D;fcitx5”<br>fcitx5 &amp;</p>
 <p>kate ~&#x2F;.xinitrc<br>把以下内容粘贴到 exec $(get_session) 之前：<br>export GTK_IM_MODULE&#x3D;fcitx5<br>export XMODIFIERS&#x3D;@im&#x3D;fcitx5<br>export QT_IM_MODULE&#x3D;fcitx5</p>
 <p>kate &#x2F;usr&#x2F;share&#x2F;rime-data&#x2F;default.yaml<br>把以下内容代替原文件中相应的内容：<br>schema_list:</p>
@@ -80,10 +94,18 @@
 <p>重启 fcitx5，ctrl + 空格 是切换中英文，ctrl + ~ 是切换不同输入法；</p>
 <p>【微信的安装与设置】：<br>添加&#x2F;删除软件——AUR——输入“weixin”——安装“deepin-wine-wechat”；</p>
 <p>如果安装了很多字体，又或者你安装了很多其它字体，导致对话框输入文字出现框框，则下载以下附件的字体，<br><a href="https://pan.baidu.com/s/1NfkDOrekacFfpQHQZoFs8w">https://pan.baidu.com/s/1NfkDOrekacFfpQHQZoFs8w</a><br>提取码: fe2p</p>
-<p>放到主文件夹，然后：<br>sudo cp ~&#x2F;111.ttf &#x2F;usr&#x2F;share&#x2F;fonts&#x2F;</p>
-<p>sudo fc-cache -f -v</p>
-<p>务份 system.reg文件：<br>cp ~&#x2F;.deepinwine&#x2F;Deepin-WeChat&#x2F;system.reg ~&#x2F;.deepinwine&#x2F;Deepin-WeChat&#x2F;system.reg.bak</p>
-<p>然后：<br>cp ~&#x2F;111.ttf ~&#x2F;.deepinwine&#x2F;Deepin-WeChat&#x2F;drive_c&#x2F;windows&#x2F;Fonts&#x2F;</p>
+<p>放到主文件夹，然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> ~/111.ttf /usr/share/fonts/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo fc-cache -f -v</span><br></pre></td></tr></table></figure>
+
+<p>备份 system.reg文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> ~/.deepinwine/Deepin-WeChat/system.reg ~/.deepinwine/Deepin-WeChat/system.reg.bak</span><br></pre></td></tr></table></figure>
+
+
+<p>然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> ~/111.ttf ~/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts/</span><br></pre></td></tr></table></figure>
+
 <p>kate ~&#x2F;.deepinwine&#x2F;Deepin-WeChat&#x2F;system.reg</p>
 <p>使用Ctrl + F 搜索 MS Shell Dlg ，得到：<br>“MS Shell Dlg”&#x3D;”SimSun”<br>“MS Shell Dlg 2”&#x3D;”Tahoma”</p>
 <p>把这两行改为：<br>“MS Shell Dlg”&#x3D;”111”<br>“MS Shell Dlg 2”&#x3D;”111”</p>
@@ -118,9 +140,13 @@
 <p> ——启动——启动时显示：设置自己的主文件夹；<br> ——常规功能：在新标签页中打开新文件夹、位置栏显示完整路径；<br> ——图标——默认图标大小：64；<br> ——预览图标大小：80；<br> ——标签宽度：中；<br> ——最大行数：3；</p>
 <p>  ——导航——新标签页位置：在当前标签页右侧；</p>
 <p>菜单栏——显示33种额外操作——视图——分组显示：勾选或者不勾选；</p>
-<p>【Ark解压乱码问题解决方法】：<br>yay -S p7zip-natspec</p>
+<p>【Ark解压乱码问题解决方法】：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yay -S p7zip-natspec</span><br></pre></td></tr></table></figure>
+
 <p>菜单栏——设置——配置Ark——插件：不勾选“Libzip”、勾选“P7zip”；</p>
-<p>【Davinci Resolve 17相关设置】：<br>无法检测显卡：<br>sudo pacman -S opencl-nvidia</p>
+<p>【Davinci Resolve 17相关设置】：<br>无法检测显卡：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S opencl-nvidia</span><br></pre></td></tr></table></figure>
+
 <p>图标问题：<br>kate &#x2F;usr&#x2F;share&#x2F;applications&#x2F;com.blackmagicdesign.resolve.desktop<br>把 “Icon&#x3D;&#x2F;opt&#x2F;resolve&#x2F;graphics&#x2F;DV_Resolve.png”改为“Icon&#x3D;davinci-resolve”。</p>
 ]]></content>
       <categories>
