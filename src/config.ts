@@ -9,7 +9,7 @@ import { LinkPreset } from './types/config'
 export const siteConfig: SiteConfig = {
   title: 'Fuwari',
   subtitle: 'Demo Site',
-  lang: 'en',
+  lang: 'zh-CN',
   themeHue: 250,
   banner: {
     enable: false,
