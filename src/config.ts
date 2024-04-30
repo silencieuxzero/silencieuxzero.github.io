@@ -7,8 +7,8 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
+  title: 'Executor',
+  subtitle: '互联网个人站点',
   lang: 'zh_CN',
   themeHue: 250,
   banner: {
@@ -39,8 +39,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/doog.jpg',
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  name: '送葬人',
+  bio: '思想即浪潮',
   links: [
     {
       name: 'GitHub',
