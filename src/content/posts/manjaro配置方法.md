@@ -1,8 +1,11 @@
 ---
 title: manjaro配置方法
-date: 2024-03-03 14:02:44
-category: 转载类
-cover: https://s2.loli.net/2024/03/03/uZvwXVo7rkmgdTQ.jpg
+published: 2024-04-30
+description: ''
+image: ''
+tags: []
+category: ''
+draft: false 
 ---
 制作linux启动盘
 https://manjaro.org/download/
