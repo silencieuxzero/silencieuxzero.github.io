@@ -3,8 +3,8 @@ title: manjaro配置方法
 published: 2024-04-30
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [Linux]
+category: '转载类'
 draft: false 
 ---
 制作linux启动盘
