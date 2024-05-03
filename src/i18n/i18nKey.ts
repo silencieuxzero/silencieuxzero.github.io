@@ -4,6 +4,7 @@ enum I18nKey {
   archive = 'archive',
   links = 'links',
   pictures = 'pictures',
+  webchat = 'webchat',
 
   tags = 'tags',
   categories = 'categories',
