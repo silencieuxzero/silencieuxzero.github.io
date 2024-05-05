@@ -1,5 +1,5 @@
 # 友情链接
-友情链接添加说明：请发邮件到[此处](rain_wind1217@outlook.com)
+友情链接添加说明：请发邮件到rain_wind1217@outlook.com
 
 ### 陈陈菌的个人博客
 ***网站链接：https://blog.glumi.cn/***
