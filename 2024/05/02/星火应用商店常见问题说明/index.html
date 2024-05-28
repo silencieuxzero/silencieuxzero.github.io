@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>星火应用商店常见问题说明 | 送葬人的互联网站点</title><meta name="author" content="送葬人"><meta name="copyright" content="送葬人"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在很多情况下，对于一些刚入门的debian系Linux用户来说安装软件可能并不是一件容易的事，尽管部分发行版自带图形化软件安装器。但众所周知，这些软件安装器多少没有终端命令行好用。 而在一些情况下，由于deb包的依赖问题以及一些其他特殊情况，会导致星火商店安装失败。基于一些用户反馈的问题，在此写成一篇文章以供参考。 安装星火应用商店debian系Linux读前须知：该部分教程仅适用于debian系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="星火应用商店常见问题说明">
+<meta property="og:url" content="http://silencieuxzero.com/2024/05/02/%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E/index.html">
+<meta property="og:site_name" content="送葬人的互联网站点">
+<meta property="og:description" content="在很多情况下，对于一些刚入门的debian系Linux用户来说安装软件可能并不是一件容易的事，尽管部分发行版自带图形化软件安装器。但众所周知，这些软件安装器多少没有终端命令行好用。 而在一些情况下，由于deb包的依赖问题以及一些其他特殊情况，会导致星火商店安装失败。基于一些用户反馈的问题，在此写成一篇文章以供参考。 安装星火应用商店debian系Linux读前须知：该部分教程仅适用于debian系">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/03/03/FZdzsSQewo1ORWk.jpg">
+<meta property="article:published_time" content="2024-05-02T10:30:26.000Z">
+<meta property="article:modified_time" content="2024-05-25T12:02:40.455Z">
+<meta property="article:author" content="送葬人">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Spark">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/03/03/FZdzsSQewo1ORWk.jpg"><link rel="shortcut icon" href="/images/doog.jpg"><link rel="canonical" href="http://silencieuxzero.com/2024/05/02/%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '星火应用商店常见问题说明',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-25 20:02:40'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/03/03/FZdzsSQewo1ORWk.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/pictures/"><i class="fa-fw fa-solid fa-photo-film"></i><span> 图库</span></a></li><li><a class="site-page child" href="/webchat/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 在线聊天</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('/images/net.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="送葬人的互联网站点"><img class="site-icon" src="https://s2.loli.net/2024/03/02/rpLv5xDMIVouSQ2.jpg"/><span class="site-name">送葬人的互联网站点</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/pictures/"><i class="fa-fw fa-solid fa-photo-film"></i><span> 图库</span></a></li><li><a class="site-page child" href="/webchat/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 在线聊天</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">星火应用商店常见问题说明</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-02T10:30:26.000Z" title="发表于 2024-05-02 18:30:26">2024-05-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-25T12:02:40.455Z" title="更新于 2024-05-25 20:02:40">2024-05-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%88%9B%E4%BD%9C%E7%B1%BB/">创作类</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在很多情况下，对于一些刚入门的debian系Linux用户来说安装软件可能并不是一件容易的事，尽管部分发行版自带图形化软件安装器。但众所周知，这些软件安装器多少没有终端命令行好用。</p>
+<p>而在一些情况下，由于deb包的依赖问题以及一些其他特殊情况，会导致星火商店安装失败。基于一些用户反馈的问题，在此写成一篇文章以供参考。</p>
+<h1 id="安装星火应用商店"><a href="#安装星火应用商店" class="headerlink" title="安装星火应用商店"></a>安装星火应用商店</h1><h2 id="debian系Linux"><a href="#debian系Linux" class="headerlink" title="debian系Linux"></a>debian系Linux</h2><p>读前须知：该部分教程仅适用于debian系Linux，在其他发行版安装星火商店请见后文。</p>
+<h3 id="第一部分——准备工作"><a href="#第一部分——准备工作" class="headerlink" title="第一部分——准备工作"></a><strong>第一部分——准备工作</strong></h3><p>在开始安装之前，我们需要先进行一些准备工作。</p>
+<h4 id="1-进行系统更新"><a href="#1-进行系统更新" class="headerlink" title="1.进行系统更新"></a>1.进行系统更新</h4><p>在您开始安装之前，请务必将您的操作系统保持在一个最新状态。执行以下命令进行更新</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update  <span class="comment">#更新软件源</span></span><br><span class="line">sudo apt upgrade  <span class="comment">#开始更新</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-下载软件本体及依赖包"><a href="#2-下载软件本体及依赖包" class="headerlink" title="2.下载软件本体及依赖包"></a>2.下载软件本体及依赖包</h4><p>在星火应用商店的<a target="_blank" rel="noopener" href="https://gitee.com/spark-store-project/spark-store/releases/tag/4.2.12">gitee</a>页面中下载deb包以及准备所需的<a target="_blank" rel="noopener" href="https://spark-app.store/download_latest">依赖</a>。<br><br>PS：在下载之前请确认您所下载的应用架构是否和您的计算机CPU架构相同，使用以下命令来确认您的计算机CPU架构：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -m</span><br></pre></td></tr></table></figure>
+<p>请根据您的终端输出内容来选择对应架构的软件包。</p>
+<h3 id="在准备好软件本体以及依赖包后进入第二部分——开始安装"><a href="#在准备好软件本体以及依赖包后进入第二部分——开始安装" class="headerlink" title="在准备好软件本体以及依赖包后进入第二部分——开始安装"></a>在准备好软件本体以及依赖包后进入<strong>第二部分——开始安装</strong></h3><p>当您完成准备工作之后便可以开始安装软件包。执行以下命令安装软件包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home/(你的用户名)/download  <span class="comment">#在大多数情况下，从浏览器下载的文件默认存储在该文件夹，切换到该目录以准备安装</span></span><br><span class="line">sudo apt-get install (文件名)  <span class="comment">#请将文件名以及括号删除，并替换为您所下载的软件包名称（别忘了把.deb后缀也复制上）</span></span><br></pre></td></tr></table></figure>
+<p>如果您的发行版是主流发行版且版本较新，那么您可以直接执行安装命令而无需进行其他操作；如果您的发行版是非主流版本（如麒麟Linux等其他非主流发行版）且版本较旧（如debian10，ubuntu20.04等）那么您就需要在开始安装之前先手动安装星火提供的依赖包或自行编译依赖（或许考虑去整个ACE也不错？）。</p>
+<p>存储依赖包的文件夹中会有一个脚本，执行该脚本以开始进行依赖安装，或者您也可以在输入apt-get install 后将所需安装的依赖全部（一次性选中）拖动到终端窗口中，这同样可以进行依赖安装。</p>
+<p>在成功安装依赖包之后您就可以回到前文进行软件包本体安装了。如果不出意外的话您可能会在终端看到一行报错，大致内容如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N: 由于文件<span class="string">&#x27;/home/xxx/xxxx.deb&#x27;</span></span><br><span class="line">无法被用户<span class="string">&#x27;xxx&#x27;</span>访问，</span><br><span class="line">已脱离沙盒并提权为根用户来进行下载。</span><br><span class="line">- pkgAcquire::Run (13: 权限不够)</span><br></pre></td></tr></table></figure>
+<p>该报错并不影响星火商店以及所安装的软件的正常使用，系正常现象。</p>
+<h2 id="arch系Linux"><a href="#arch系Linux" class="headerlink" title="arch系Linux"></a>arch系Linux</h2><p>在arch系Linux安装星火应用商店需要安装ACE兼容环境，执行以下命令以开始安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S amber-ce-bookworm</span><br></pre></td></tr></table></figure>
+<p>如您未安装yay可以尝试执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S yay</span><br></pre></td></tr></table></figure>
+<p>或参考<a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/Yay">arch wiki</a>页面自行编译。<br><br>在安装完成ACE兼容环境后请参考debian系linux安装教程进行安装</p>
+<h2 id="RedHat系Linux"><a href="#RedHat系Linux" class="headerlink" title="RedHat系Linux"></a>RedHat系Linux</h2><p><strong>该部分摘自ACE gitee文档</strong></p>
+<h3 id="获取编译依赖"><a href="#获取编译依赖" class="headerlink" title="获取编译依赖"></a>获取编译依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install rpm-build debootstrap dpkg <span class="built_in">which</span> systemd-container jq -y</span><br></pre></td></tr></table></figure>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>下载并解压到用户home目录<br></p>
+<h4 id="获取最新版本号"><a href="#获取最新版本号" class="headerlink" title="获取最新版本号"></a>获取最新版本号</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./rpmbuild/SPECS/get-ver.sh</span><br></pre></td></tr></table></figure>
+<h4 id="下载最新源码包"><a href="#下载最新源码包" class="headerlink" title="下载最新源码包"></a>下载最新源码包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> rpmbuild/SOURCES &amp;&amp; ./get-tgz.sh &amp;&amp; <span class="built_in">cd</span> -</span><br></pre></td></tr></table></figure>
+<h3 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> rpmbuild &amp;&amp; rpmbuild -ba SPECS/bookworm-compatibility-mode.spec</span><br></pre></td></tr></table></figure>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> rpmbuild/RPMS/*/ &amp;&amp; sudo dnf install *.rpm -y</span><br></pre></td></tr></table></figure>
+<p>在安装完成ACE兼容环境后请参考debian系linux安装教程进行安装</p>
+<h1 id="关于ACE兼容环境"><a href="#关于ACE兼容环境" class="headerlink" title="关于ACE兼容环境"></a>关于ACE兼容环境</h1><p><em><strong>注意：该部分文档摘自ACE仓库README文件，少部分进行二次加工，实际内容与反馈请前往<a target="_blank" rel="noopener" href="https://gitee.com/amber-ce">项目仓库</a></strong></em><br><br>ACE兼容环境，全称Amber CE（中文名为<strong>琥珀兼容环境</strong>）<br>琥珀兼容环境是一款基于bubblewrap的容器化应用打包和分发方案。</p>
+<p>书虫兼容模式可以让你可以在<strong>几乎</strong>任何的Linux发行版上运行一个<code>Debian 12</code>容器。在<code>Appimage</code>应用无法启动或者打包的时候，使用书虫兼容模式来打包可以让你在使用最新的环境的同时在更多的发行版上运行，这不失为一个很好的选择</p>
+<p> <strong>首次安装后请注销或重启以展示启动器入口</strong> </p>
+<p>请使用 <code>git clone --recurse-submodules</code> 来获取</p>
+<h2 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h2><h3 id="快捷安装-需要安装星火应用商店"><a href="#快捷安装-需要安装星火应用商店" class="headerlink" title="快捷安装 (需要安装星火应用商店)"></a>快捷安装 (需要安装星火应用商店)</h3><p><a target="_blank" rel="noopener" href="https://spk-resolv.spark-app.store/?spk=spk://store/tools/cn.flamescion.bookworm-compatibility-mode/">spk:&#x2F;&#x2F;store&#x2F;tools&#x2F;cn.flamescion.bookworm-compatibility-mode&#x2F;</a></p>
+<h3 id="手动安装（Debian-Fedora-Arch"><a href="#手动安装（Debian-Fedora-Arch" class="headerlink" title="手动安装（Debian&#x2F;Fedora&#x2F;Arch)"></a>手动安装（Debian&#x2F;Fedora&#x2F;Arch)</h3><p><a target="_blank" rel="noopener" href="https://pan.shenmo.tech/index.php?share/folder&user=1&sid=Ye6kyxQE">https://pan.shenmo.tech/index.php?share/folder&amp;user=1&amp;sid=Ye6kyxQE</a></p>
+<p>(Ubuntu 18.04&#x2F;deepin 15需要先安装依赖)</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.d.store.deepinos.org.cn/store/depends/bubblewrap_0.3.1-4_amd64.deb">https://cdn.d.store.deepinos.org.cn/store/depends/bubblewrap_0.3.1-4_amd64.deb</a>   x86</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.d.store.deepinos.org.cn/aarch64-store/depends/bubblewrap_0.3.1-4_arm64.deb">https://cdn.d.store.deepinos.org.cn/aarch64-store/depends/bubblewrap_0.3.1-4_arm64.deb</a> arm64</p>
+<h3 id="Amber-CE-x86"><a href="#Amber-CE-x86" class="headerlink" title="Amber-CE x86"></a>Amber-CE x86</h3><p>利用 LAT 运行的x86容器，可安装和运行x86的deb  <a target="_blank" rel="noopener" href="https://pan.shenmo.tech/index.php?share/folder&user=1&sid=qnJAY5BE">https://pan.shenmo.tech/index.php?share/folder&amp;user=1&amp;sid=qnJAY5BE</a></p>
+<h1 id="关于使用星火商店时遇到的一些小问题"><a href="#关于使用星火商店时遇到的一些小问题" class="headerlink" title="关于使用星火商店时遇到的一些小问题"></a>关于使用星火商店时遇到的一些小问题</h1><p>Q：为什么有时我下载软件它会一直卡在0kb&#x2F;s <br><br>A：这是由于星火的服务器压力较大而导致的问题，目前似乎已被解决。</p>
+<p>Q：我是debian&#x2F;(其他发行版)用户，为什么商店里所有的软件都显示无法兼容该发行版。 <br><br>A：该原因主要是因为星火没有制作其他部分debian系Linux发行版的软件兼容提示，目前商店的软件兼容提示仅有ubuntu，deepin，UOS等。不影响使用，兼容问题请以软件简介和实际安装为准。</p>
+<p>Q：我想在非debian系Linux上安装星火应该怎么做 <br><br>A：通常情况下，我们推荐您使用ACE兼容环境来进行安装，该项目的地址：<a target="_blank" rel="noopener" href="https://gitee.com/amber-ce/amber-ce-bookworm">https://gitee.com/amber-ce/amber-ce-bookworm</a> <br><br>如果您无法独自解决该问题，或者有其他需求，您也可以加入星火商店用户交流群寻求一些其他的可能是有偿的支持（毕竟星火的主线支持还是debian系Linux，开发这些兼容性软件不易，请理解）</p>
+<p>Q：为什么有时商店里的软件会没有图标 <br><br>A：服务器问题，不影响使用</p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p><strong>该文档并非由星火商店官方所写，仅为商店用户自行编写，因此请不要将此文档作为官方文档看待。</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://silencieuxzero.com">送葬人</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://silencieuxzero.com/2024/05/02/%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E/">http://silencieuxzero.com/2024/05/02/%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://silencieuxzero.com" target="_blank">送葬人的互联网站点</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Spark/">Spark</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/03/03/FZdzsSQewo1ORWk.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/05/02/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEAstro%E7%9A%84Fuwari%E4%B8%BB%E9%A2%98/" title="关于配置Astro的Fuwari主题"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关于配置Astro的Fuwari主题</div></div></a></div><div class="next-post pull-right"><a href="/2024/03/03/manjaro%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" title="manjaro配置方法"><img class="cover" src="https://s2.loli.net/2024/03/03/uZvwXVo7rkmgdTQ.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">manjaro配置方法</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/03/03/FZdzsSQewo1ORWk.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">送葬人</div><div class="author-info__description">思想即浪潮</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/691868316?spm_id_from=333.337.0.0"><i class="fab fa-bimobject"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:rain&quot;_wind1217@outlook.com&quot;" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里是Executor的互联网博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97"><span class="toc-number">1.</span> <span class="toc-text">安装星火应用商店</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#debian%E7%B3%BBLinux"><span class="toc-number">1.1.</span> <span class="toc-text">debian系Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.1.1.</span> <span class="toc-text">第一部分——准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%BF%9B%E8%A1%8C%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">1.进行系统更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E6%9C%AC%E4%BD%93%E5%8F%8A%E4%BE%9D%E8%B5%96%E5%8C%85"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">2.下载软件本体及依赖包</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E5%87%86%E5%A4%87%E5%A5%BD%E8%BD%AF%E4%BB%B6%E6%9C%AC%E4%BD%93%E4%BB%A5%E5%8F%8A%E4%BE%9D%E8%B5%96%E5%8C%85%E5%90%8E%E8%BF%9B%E5%85%A5%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E2%80%94%E2%80%94%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.2.</span> <span class="toc-text">在准备好软件本体以及依赖包后进入第二部分——开始安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#arch%E7%B3%BBLinux"><span class="toc-number">1.2.</span> <span class="toc-text">arch系Linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RedHat%E7%B3%BBLinux"><span class="toc-number">1.3.</span> <span class="toc-text">RedHat系Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%BC%96%E8%AF%91%E4%BE%9D%E8%B5%96"><span class="toc-number">1.3.1.</span> <span class="toc-text">获取编译依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.3.2.</span> <span class="toc-text">下载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%B7"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">获取最新版本号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E6%BA%90%E7%A0%81%E5%8C%85"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">下载最新源码包</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA"><span class="toc-number">1.3.3.</span> <span class="toc-text">构建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.3.4.</span> <span class="toc-text">安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EACE%E5%85%BC%E5%AE%B9%E7%8E%AF%E5%A2%83"><span class="toc-number">2.</span> <span class="toc-text">关于ACE兼容环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97"><span class="toc-number">2.1.</span> <span class="toc-text">安装指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E5%AE%89%E8%A3%85-%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97"><span class="toc-number">2.1.1.</span> <span class="toc-text">快捷安装 (需要安装星火应用商店)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%EF%BC%88Debian-Fedora-Arch"><span class="toc-number">2.1.2.</span> <span class="toc-text">手动安装（Debian&#x2F;Fedora&#x2F;Arch)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Amber-CE-x86"><span class="toc-number">2.1.3.</span> <span class="toc-text">Amber-CE x86</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8%E6%98%9F%E7%81%AB%E5%95%86%E5%BA%97%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E9%97%AE%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">关于使用星火商店时遇到的一些小问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%BD%95"><span class="toc-number">3.1.</span> <span class="toc-text">附录</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/25/hello-world/" title="Hello World">Hello World</a><time datetime="2024-05-25T11:10:30.314Z" title="发表于 2024-05-25 19:10:30">2024-05-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/02/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEAstro%E7%9A%84Fuwari%E4%B8%BB%E9%A2%98/" title="关于配置Astro的Fuwari主题">关于配置Astro的Fuwari主题</a><time datetime="2024-05-02T10:30:26.000Z" title="发表于 2024-05-02 18:30:26">2024-05-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/02/%E6%98%9F%E7%81%AB%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E/" title="星火应用商店常见问题说明">星火应用商店常见问题说明</a><time datetime="2024-05-02T10:30:26.000Z" title="发表于 2024-05-02 18:30:26">2024-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/03/manjaro%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" title="manjaro配置方法"><img src="https://s2.loli.net/2024/03/03/uZvwXVo7rkmgdTQ.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="manjaro配置方法"/></a><div class="content"><a class="title" href="/2024/03/03/manjaro%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" title="manjaro配置方法">manjaro配置方法</a><time datetime="2024-03-03T06:02:44.000Z" title="发表于 2024-03-03 14:02:44">2024-03-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/02/%E8%AE%BA%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%8A%98%E8%85%BE%E6%9D%A8%E9%98%9F/" title="论如何正确的折腾杨队">论如何正确的折腾杨队</a><time datetime="2024-03-02T10:30:26.000Z" title="发表于 2024-03-02 18:30:26">2024-03-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/images/net.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 送葬人</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
