@@ -1,7 +1,4 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+你好！欢迎来到我的个人博客。我是送葬人，一位[fandom后室中文](https://backrooms.fandom.com/zh/wiki/Backrooms_Wiki)的普通写手。这里是我搭建的个人博客。该博客基于[Astro](https://docs.astro.build/zh-cn/getting-started/)框架，使用[Fuwari](https://github.com/saicaca/fuwari/tree/main)主题进行美化
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+我会在这里分享我在fandom后室中文的文章和fandom后室中文写手群里的一些神奇妙妙聊天记录（避免被站长杨队制裁）
