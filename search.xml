@@ -18,4 +18,24 @@
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>manjaro入门配置教程</title>
+    <url>/2025/03/29/manjaroedit/</url>
+    <content><![CDATA[<p>manjaro,一款基于arch linux的linux发行版，其在初次安装时往往会需要调试一些东西，在此，作者将自己的配置经验发出供大家参考</p>
+<h2 id="进入系统后的配置"><a href="#进入系统后的配置" class="headerlink" title="进入系统后的配置"></a>进入系统后的配置</h2><h3 id="更换pacman源"><a href="#更换pacman源" class="headerlink" title="更换pacman源"></a>更换pacman源</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman-mirrors -i -c China -m rank</span><br><span class="line"><span class="built_in">sudo</span> pacman -Syy</span><br></pre></td></tr></table></figure></div>
+<h3 id="配置fcitx5"><a href="#配置fcitx5" class="headerlink" title="配置fcitx5"></a>配置fcitx5</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/environment</span><br></pre></td></tr></table></figure></div>
+<p>输入以下内容</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line">SDL_IM_MODULE=fcitx</span><br><span class="line">GLFW_IM_MODULE=ibus</span><br></pre></td></tr></table></figure></div>
+<p>完成后重启电脑</p>
+<h3 id="配置flatpak源"><a href="#配置flatpak源" class="headerlink" title="配置flatpak源"></a>配置flatpak源</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="拓展玩法"><a href="#拓展玩法" class="headerlink" title="拓展玩法"></a>拓展玩法</h2><h3 id="在manjaro上使用Andorid软件"><a href="#在manjaro上使用Andorid软件" class="headerlink" title="在manjaro上使用Andorid软件"></a>在manjaro上使用Andorid软件</h3><p>(后续补上)</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Linux, Manjaro</tag>
+      </tags>
+  </entry>
 </search>
